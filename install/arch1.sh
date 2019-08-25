@@ -24,4 +24,4 @@ echo '3.2 Установка основных пакетов'
 pacstrap /mnt base base-devel
 echo '3.3 Настройка системы'
 genfstab -pU /mnt >> /mnt/etc/fstab
-
+arch-chroot /mnt sh -c "$(curl -fsSL https://raw.githubusercontent.com/sollo93/Arch/master/install/arch2.sh)"
